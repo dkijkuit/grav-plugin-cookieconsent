@@ -17,7 +17,7 @@ window.cookieconsent.initialise({
 {% else %}
 "position": "{{ config.plugins.cookieconsent.position }}",
 {% endif %}
-"showLink": {% if config.plugins.cookieconsent.content_link_show %} true, {% else %} false, {% endif %}
+"showLink":{% if config.plugins.cookieconsent.content_link_show %} true,{% else %} false,{% endif %}
 "theme": "{{ config.plugins.cookieconsent.theme }}",
 "content": {
     "message": "{% if config.plugins.cookieconsent.content_message %}{{ config.plugins.cookieconsent.content_message }}{% else %}{{ 'PLUGINS.COOKIECONSENT.CONTENT_MESSAGE'|t }}{% endif %}",
